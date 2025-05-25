@@ -5,47 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Jaina | Software Developer</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">VJ</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <span>VJ</span>
+        </div>
+        <div class="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section id="home">
-            <h1>Vaibhav Jaina</h1>
-            <p>Software Developer</p>
-        </section>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="greeting">Hello, I'm</div>
+            <h1 class="name">Vaibhav Jaina</h1>
+            <div class="title-wrapper">
+                <span class="title">I'm a </span>
+                <span class="typed-text"></span>
+                <span class="cursor">&nbsp;</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#skills" class="btn secondary-btn">My Skills</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am an aspiring software developer with a strong foundation in programming languages and software development principles.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <p>Coming soon...</p>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <p>Coming soon...</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Vaibhav Jaina. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>VJ</span>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2024 Vaibhav Jaina. All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <a href="#home">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
