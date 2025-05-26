@@ -1,4 +1,4 @@
-// Basic JavaScript for Day 2
+// JavaScript for Day 3
 document.addEventListener('DOMContentLoaded', function() {
     // Typing effect
     const typedTextSpan = document.querySelector('.typed-text');
@@ -91,4 +91,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // About section animation
+    const aboutImage = document.querySelector('.about-image');
+    const aboutText = document.querySelector('.about-text');
+    
+    if (aboutImage && aboutText) {
+        aboutImage.style.opacity = '0';
+        aboutText.style.opacity = '0';
+        
+        setTimeout(() => {
+            aboutImage.style.transition = 'opacity 1s ease, transform 1s ease';
+            aboutText.style.transition = 'opacity 1s ease, transform 1s ease';
+            
+            aboutImage.style.opacity = '1';
+            aboutText.style.opacity = '1';
+            
+            aboutImage.style.transform = 'translateX(0)';
+            aboutText.style.transform = 'translateX(0)';
+        }, 500);
+    }
 });
